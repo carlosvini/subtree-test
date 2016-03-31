@@ -1,4 +1,4 @@
-
+<?php
 class TestWithClass {
     public function test()
     {
