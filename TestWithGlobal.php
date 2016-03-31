@@ -23,30 +23,4 @@ if ($xtra_foo) {
         }
     }
 }
-if ($campos) {
-    foreach ($campos as $campo) {
-        if ($bar[$campo['tipo']]) {
-            if ($bar[$campo['tipo']]['where']) {
-                $campo['where'] = $bar[$campo['tipo']]['where'];
-            }
-            if (isset($bar[$campo['tipo']]['obrigatorio'])) {
-                $campo['obrigatorio'] = $bar[$campo['tipo']]['obrigatorio'];
-            }
-            if (isset($bar[$campo['tipo']]['separador'])) {
-                $campo['separador'] = $bar[$campo['tipo']]['separador'];
-            }
-            if (isset($bar[$campo['tipo']]['special'])) {
-                $campo['tipo_de_campo'] = 'special';
-                $campo['nome_original'] = $campo['nome'];
-                $campo['nome'] = $bar[$campo['tipo']]['special'];
-            }
-            if (!is_null($bar[$campo['tipo']]['default'])) {
-                $campo['default'] = $bar[$campo['tipo']]['default'];
-            }
-            $campo['readonly'] = $bar[$campo['tipo']]['readonly'];
-        }
-        if (!$bar[$campo['tipo']]['remover']) {
-            var_dump($bar);
-        }
-    }
-}
+
