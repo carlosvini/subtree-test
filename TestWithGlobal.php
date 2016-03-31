@@ -1,4 +1,4 @@
-
+<?php
 $bar = [];
 if ($xtra_foo) {
     foreach ($xtra_foo as $item) {
