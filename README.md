@@ -1,2 +1,0 @@
-# codeclimate-test
-Test
