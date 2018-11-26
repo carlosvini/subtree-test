@@ -4,6 +4,6 @@ class Teste
 {
     public function bogus()
     {
-        return 'A';
+        return 'B on master';
     }
 }
